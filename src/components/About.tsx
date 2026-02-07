@@ -70,14 +70,18 @@ export default function About() {
         <div className="mb-10 sm:mb-14 relative overflow-hidden bg-[#1A1A1A]">
           <video
             className="w-full h-[200px] sm:h-[400px] lg:h-[480px] object-cover"
-            src="/images/timelapse.mov"
             muted
             loop
             playsInline
             autoPlay
+            preload="auto"
+            poster="/images/show-1.jpeg"
             aria-label="Aerial timelapse video of the 2025 Riverside Riders Fall Wheels Show at Riverside Community Church in St. Charles, Illinois showing classic cars, trucks, and motorcycles"
             title="Aerial view of the Fall Wheels Show — Free car show in St. Charles IL"
-          />
+          >
+            <source src="/images/timelapse.mp4" type="video/mp4" />
+            <source src="/images/timelapse.mov" type="video/quicktime" />
+          </video>
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent p-4 sm:p-8">
             <p className="text-white/80 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase">
               Aerial View — 2025 Fall Wheels Show
