@@ -75,6 +75,8 @@ export default function About() {
             loop
             playsInline
             autoPlay
+            aria-label="Aerial timelapse video of the 2025 Riverside Riders Fall Wheels Show at Riverside Community Church in St. Charles, Illinois showing classic cars, trucks, and motorcycles"
+            title="Aerial view of the Fall Wheels Show — Free car show in St. Charles IL"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent p-4 sm:p-8">
             <p className="text-white/80 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase">

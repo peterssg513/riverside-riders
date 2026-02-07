@@ -1,6 +1,27 @@
+# Riverside Riders Fall Wheels Show 2026
+# https://riversideriderscarshow.com
+
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /api/
 
+# Sitemaps
 Sitemap: https://riversideriderscarshow.com/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Host
+Host: https://riversideriderscarshow.com

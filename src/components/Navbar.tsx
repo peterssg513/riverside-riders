@@ -47,7 +47,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2 sm:gap-3">
           <Image
             src="/images/logo.png"
-            alt="Riverside Riders Logo"
+            alt="Riverside Riders Fall Wheels Show — Free Car Show in St. Charles IL"
             width={36}
             height={36}
             className="w-8 h-8 sm:w-10 sm:h-10 object-contain invert"

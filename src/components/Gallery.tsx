@@ -3,11 +3,11 @@
 import Image from "next/image";
 
 const galleryImages = [
-  { id: 1, src: "/images/show-1.jpeg", alt: "Classic cars lined up at the 2025 show" },
-  { id: 2, src: "/images/show-2.jpeg", alt: "Vehicle showcase at the Fall Wheels Show" },
-  { id: 3, src: "/images/show-3.jpeg", alt: "Attendees checking out the rides" },
-  { id: 4, src: "/images/show-4.jpeg", alt: "Beautiful rides on display" },
-  { id: 5, src: "/images/show-5.jpeg", alt: "Car show crowd and community" },
+  { id: 1, src: "/images/show-1.jpeg", alt: "Classic cars and vintage automobiles lined up at the 2025 Riverside Riders Fall Wheels Show in St. Charles, Illinois" },
+  { id: 2, src: "/images/show-2.jpeg", alt: "Hot rods, muscle cars, and modified classics on display at the Fox Valley car show in St. Charles IL" },
+  { id: 3, src: "/images/show-3.jpeg", alt: "Attendees and families enjoying the free car show with trophies and live music at Riverside Community Church" },
+  { id: 4, src: "/images/show-4.jpeg", alt: "Beautiful classic trucks and motorcycles at the independently judged Fall Wheels Show near Geneva and Batavia IL" },
+  { id: 5, src: "/images/show-5.jpeg", alt: "Car show crowd and community at the annual Riverside Riders event serving St. Charles, South Elgin, and Campton Hills" },
 ];
 
 export default function Gallery() {

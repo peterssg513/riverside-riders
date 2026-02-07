@@ -1,48 +1,58 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://riversideriderscarshow.com";
+  const now = new Date();
+
   return [
+    // Homepage — highest priority, most frequently crawled
     {
-      url: "https://riversideriderscarshow.com",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      url: baseUrl,
+      lastModified: now,
+      changeFrequency: "daily",
       priority: 1.0,
     },
+    // Registration — second highest (conversion page)
     {
-      url: "https://riversideriderscarshow.com#about",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
+      url: `${baseUrl}/#register`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
+    // About section
     {
-      url: "https://riversideriderscarshow.com#awards",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://riversideriderscarshow.com#register",
-      lastModified: new Date(),
+      url: `${baseUrl}/#about`,
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Awards / trophy classes
     {
-      url: "https://riversideriderscarshow.com#gallery",
-      lastModified: new Date(),
+      url: `${baseUrl}/#awards`,
+      lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
     },
+    // Gallery / past shows
     {
-      url: "https://riversideriderscarshow.com#faq",
-      lastModified: new Date(),
+      url: `${baseUrl}/#gallery`,
+      lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.8,
     },
+    // Location & directions
     {
-      url: "https://riversideriderscarshow.com#location",
-      lastModified: new Date(),
+      url: `${baseUrl}/#location`,
+      lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
+    },
+    // FAQ (drives FAQ rich results)
+    {
+      url: `${baseUrl}/#faq`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
   ];
 }

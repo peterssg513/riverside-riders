@@ -44,24 +44,30 @@ export default function Hero() {
           </div>
 
           {/* Title Stack — scaled for all screens */}
-          <h1
+          <h1 className="sr-only">
+            Riverside Riders Fall Wheels Show 2026 — Free Car Show in St. Charles, Illinois, September 19, 2026
+          </h1>
+          <div
+            aria-hidden="true"
             className="text-[2rem] sm:text-6xl md:text-7xl font-black text-white tracking-wider uppercase leading-[0.95]"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Riverside Riders
-          </h1>
-          <h2
+          </div>
+          <div
+            aria-hidden="true"
             className="text-[3rem] sm:text-[5.5rem] md:text-[7rem] text-[#8B1A1A] leading-[0.85] -mt-1"
             style={{ fontFamily: "var(--font-dancing)" }}
           >
             Fall Wheels
-          </h2>
-          <h3
+          </div>
+          <div
+            aria-hidden="true"
             className="text-[2rem] sm:text-6xl md:text-7xl font-black text-white tracking-[0.1em] sm:tracking-[0.15em] uppercase leading-[0.95] -mt-2"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Show 2026
-          </h3>
+          </div>
 
           {/* Tagline */}
           <p className="text-[#E8DFD0] text-sm sm:text-lg mt-4 sm:mt-6 tracking-wide">
