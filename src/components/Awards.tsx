@@ -76,7 +76,7 @@ export default function Awards() {
         </div>
 
         {/* Best Motorcycles — centered full-width row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#333] mt-px">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#1A1A1A] mt-px">
           <div className="sm:col-start-2 bg-[#1A1A1A] p-5 sm:p-7 hover:bg-[#222] transition-colors group">
             <div className="flex items-start gap-3 sm:gap-4 justify-center sm:justify-start">
               <div className="w-10 h-10 sm:w-11 sm:h-11 bg-[#8B1A1A] flex items-center justify-center flex-shrink-0 group-hover:bg-[#C9A84C] transition-colors">
