@@ -1,0 +1,114 @@
+"use client";
+
+import {
+  FaCar,
+  FaWrench,
+  FaCarSide,
+  FaMotorcycle,
+  FaTruck,
+  FaTrophy,
+  FaTools,
+} from "react-icons/fa";
+
+const entryClasses = [
+  { icon: FaCar, name: "Best Stock Classic", desc: "Original, unmodified classics in pristine condition." },
+  { icon: FaWrench, name: "Best Modified Classic", desc: "Classics with tasteful modifications and custom work." },
+  { icon: FaCarSide, name: "Best Modern Car", desc: "Standout vehicles under 25 years old.", tag: "Under 25 Years" },
+  { icon: FaMotorcycle, name: "Best American Bike", desc: "American-made motorcycles — Harley, Indian & more." },
+  { icon: FaMotorcycle, name: "Best Import Bike", desc: "Import bikes — Honda, Kawasaki, Ducati, BMW & beyond." },
+  { icon: FaTruck, name: "Best Classic Truck", desc: "Classic trucks showcasing American hauling heritage." },
+];
+
+const specialAwards = [
+  { icon: FaTrophy, name: "Best of Show", desc: "The ultimate award — judge's top pick from all entries." },
+  { icon: FaTools, name: "Least Likely to Make it Home", desc: "Fan-favorite for the ride with the most character." },
+];
+
+export default function Awards() {
+  return (
+    <section id="awards" className="py-14 sm:py-28 bg-[#1A1A1A]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="section-label border-[#C9A84C] text-[#C9A84C]">
+            Trophy Classes
+          </span>
+          <h2
+            className="text-2xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-wider mt-4"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            6 Classes. 8 Trophies.
+            <br />
+            <span className="text-[#C9A84C]">All Independently Judged.</span>
+          </h2>
+        </div>
+
+        {/* Entry Classes — stacked on mobile, grid on larger */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#333]">
+          {entryClasses.map((cls, idx) => (
+            <div
+              key={idx}
+              className="bg-[#1A1A1A] p-5 sm:p-7 hover:bg-[#222] transition-colors group"
+            >
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-11 sm:h-11 bg-[#8B1A1A] flex items-center justify-center flex-shrink-0 group-hover:bg-[#C9A84C] transition-colors">
+                  <cls.icon className="text-white text-sm sm:text-base" />
+                </div>
+                <div className="min-w-0">
+                  <h3
+                    className="font-black text-white uppercase tracking-wide text-xs sm:text-sm"
+                    style={{ fontFamily: "var(--font-playfair)" }}
+                  >
+                    {cls.name}
+                  </h3>
+                  {cls.tag && (
+                    <span className="inline-block text-[9px] sm:text-[10px] bg-[#C9A84C] text-[#1A1A1A] font-black px-2 py-px mt-1 uppercase tracking-wide">
+                      {cls.tag}
+                    </span>
+                  )}
+                  <p className="text-[#777] text-xs sm:text-sm mt-1.5 sm:mt-2 leading-relaxed">
+                    {cls.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Special Awards */}
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          {specialAwards.map((award, idx) => (
+            <div
+              key={idx}
+              className="border-2 border-[#C9A84C]/40 p-4 sm:p-6 flex items-center gap-4 sm:gap-5 bg-[#C9A84C]/5"
+            >
+              <award.icon className="text-[#C9A84C] text-xl sm:text-2xl flex-shrink-0" />
+              <div className="min-w-0">
+                <h4
+                  className="font-black text-white uppercase tracking-wide text-xs sm:text-sm"
+                  style={{ fontFamily: "var(--font-playfair)" }}
+                >
+                  ★ {award.name}
+                </h4>
+                <p className="text-[#777] text-xs sm:text-sm mt-1">{award.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-10 sm:mt-14 text-center">
+          <p className="text-[#777] mb-4 text-xs sm:text-sm">
+            Which class will your ride compete in?
+          </p>
+          <a
+            href="#register"
+            className="cta-primary text-sm sm:text-base px-8 sm:px-10 py-3.5 sm:py-4"
+          >
+            Register Now — It&apos;s Free
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
