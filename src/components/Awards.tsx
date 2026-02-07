@@ -21,7 +21,7 @@ const entryClasses = [
 ];
 
 const specialAwards = [
-  { icon: FaTrophy, name: "Best of Show", desc: "The ultimate award — judge's top pick from all entries." },
+  { icon: FaTrophy, name: "Gimme Your Keys", desc: "The car the judges all want — the ride everyone wishes they could drive home." },
   { icon: FaTools, name: "Least Likely to Make it Home", desc: "Fan-favorite for the ride with the most character." },
 ];
 
