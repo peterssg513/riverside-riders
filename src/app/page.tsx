@@ -82,10 +82,11 @@ export default function Home() {
           Best Classic Stock Car (1971-1999), Best Modified Classic Car
           (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car
           or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best
-          Motorcycles (All Years and Makes). Two special judge awards —
-          Gimme Your Keys (the car the judges all want) and Least Likely to
-          Make it Home — recognize the ride everyone wishes they could drive
-          home and the fan-favorite with the most character. All
+          Motorcycles (All Years and Makes). Three special judge awards —
+          Best of Show (the judge&apos;s top pick), Gimme Your Keys (the car
+          the judges all want), and Least Likely to Make it Home — recognize
+          the best overall vehicle, the ride everyone wishes they could drive
+          home, and the fan-favorite with the most character. All
           trophies are top quality. Whether you have a classic car, vintage
           automobile, antique car, hot rod, muscle car, custom build, modified
           classic, modern sports car, modern truck, classic pickup truck,

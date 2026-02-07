@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "What are the award classes?",
-    a: "Seven entry classes: Best Classic Stock Car (1900-1970), Best Classic Stock Car (1971-1999), Best Modified Classic Car (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best Motorcycles (All Years and Makes). Plus two special judge awards: Gimme Your Keys (the car the judges all want) and Least Likely to Make it Home.",
+    a: "Seven entry classes: Best Classic Stock Car (1900-1970), Best Classic Stock Car (1971-1999), Best Modified Classic Car (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best Motorcycles (All Years and Makes). Plus three special judge awards: Best of Show, Gimme Your Keys (the car the judges all want), and Least Likely to Make it Home.",
   },
   {
     q: "Where is it held?",
