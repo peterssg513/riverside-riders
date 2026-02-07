@@ -67,7 +67,7 @@ CREATE INDEX IF NOT EXISTS idx_registrations_email ON registrations(email);
 CREATE INDEX IF NOT EXISTS idx_registrations_created_at ON registrations(created_at);
 
 -- 9. FUNCTION: Auto-generate class_number on vehicle insert
--- Prefix map: SC=Stock Classic, MC=Modified Classic, MD=Modern, AB=American Bike, IB=Import Bike, CT=Classic Truck
+-- Prefix map: CS1=Classic Stock 1900-1970, CS2=Classic Stock 1971-1999, MC1=Modified Classic 1900-1970, MC2=Modified Stock 1971-1999, MD=Modern, CT=Classic Truck, BM=Best Motorcycles
 CREATE OR REPLACE FUNCTION generate_class_number()
 RETURNS TRIGGER AS $$
 DECLARE
@@ -76,12 +76,13 @@ DECLARE
 BEGIN
   -- Determine prefix based on class
   CASE NEW.class
-    WHEN 'Best Stock Classic' THEN prefix := 'SC';
-    WHEN 'Best Modified Classic' THEN prefix := 'MC';
-    WHEN 'Best Modern Car (under 25 years)' THEN prefix := 'MD';
-    WHEN 'Best American Bike' THEN prefix := 'AB';
-    WHEN 'Best Import Bike' THEN prefix := 'IB';
-    WHEN 'Best Classic Truck' THEN prefix := 'CT';
+    WHEN 'Best Classic Stock Car (1900-1970)' THEN prefix := 'CS1';
+    WHEN 'Best Classic Stock Car (1971-1999)' THEN prefix := 'CS2';
+    WHEN 'Best Modified Classic Car (1900-1970)' THEN prefix := 'MC1';
+    WHEN 'Best Modified Stock Car (1971-1999)' THEN prefix := 'MC2';
+    WHEN 'Best Modern Car or Truck (2000 or above)' THEN prefix := 'MD';
+    WHEN 'Best Classic Truck (Pre-2000)' THEN prefix := 'CT';
+    WHEN 'Best Motorcycles (All Years and Makes)' THEN prefix := 'BM';
     ELSE prefix := 'XX';
   END CASE;
 

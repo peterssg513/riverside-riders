@@ -11,12 +11,13 @@ import {
 } from "react-icons/fa";
 
 const entryClasses = [
-  { icon: FaCar, name: "Best Stock Classic", desc: "Original, unmodified classics in pristine condition." },
-  { icon: FaWrench, name: "Best Modified Classic", desc: "Classics with tasteful modifications and custom work." },
-  { icon: FaCarSide, name: "Best Modern Car", desc: "Standout vehicles under 25 years old.", tag: "Under 25 Years" },
-  { icon: FaMotorcycle, name: "Best American Bike", desc: "American-made motorcycles — Harley, Indian & more." },
-  { icon: FaMotorcycle, name: "Best Import Bike", desc: "Import bikes — Honda, Kawasaki, Ducati, BMW & beyond." },
-  { icon: FaTruck, name: "Best Classic Truck", desc: "Classic trucks showcasing American hauling heritage." },
+  { icon: FaCar, name: "Best Classic Stock Car", era: "1900–1970", desc: "Original, unmodified classic cars in pristine condition from the golden era." },
+  { icon: FaCar, name: "Best Classic Stock Car", era: "1971–1999", desc: "Factory-original classic cars from the '70s, '80s, and '90s." },
+  { icon: FaWrench, name: "Best Modified Classic Car", era: "1900–1970", desc: "Classics with tasteful modifications, custom work, and performance upgrades." },
+  { icon: FaWrench, name: "Best Modified Stock Car", era: "1971–1999", desc: "Modified rides from the '70s through the '90s with custom touches." },
+  { icon: FaCarSide, name: "Best Modern Car or Truck", era: "2000+", desc: "Standout vehicles from 2000 or above — cars and trucks." },
+  { icon: FaTruck, name: "Best Classic Truck", era: "Pre-2000", desc: "Classic trucks showcasing American hauling heritage." },
+  { icon: FaMotorcycle, name: "Best Motorcycles", era: "All Years", desc: "All years and makes — Harley, Indian, Honda, Kawasaki, Ducati & beyond." },
 ];
 
 const specialAwards = [
@@ -37,13 +38,13 @@ export default function Awards() {
             className="text-2xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-wider mt-4"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            6 Classes. 8 Trophies.
+            7 Classes. 9 Trophies.
             <br />
             <span className="text-[#C9A84C]">All Independently Judged.</span>
           </h2>
         </div>
 
-        {/* Entry Classes — stacked on mobile, grid on larger */}
+        {/* Entry Classes Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#333]">
           {entryClasses.map((cls, idx) => (
             <div
@@ -61,11 +62,9 @@ export default function Awards() {
                   >
                     {cls.name}
                   </h3>
-                  {cls.tag && (
-                    <span className="inline-block text-[9px] sm:text-[10px] bg-[#C9A84C] text-[#1A1A1A] font-black px-2 py-px mt-1 uppercase tracking-wide">
-                      {cls.tag}
-                    </span>
-                  )}
+                  <span className="inline-block text-[9px] sm:text-[10px] bg-[#C9A84C] text-[#1A1A1A] font-black px-2 py-px mt-1 uppercase tracking-wide">
+                    {cls.era}
+                  </span>
                   <p className="text-[#777] text-xs sm:text-sm mt-1.5 sm:mt-2 leading-relaxed">
                     {cls.desc}
                   </p>

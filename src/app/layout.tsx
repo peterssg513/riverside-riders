@@ -324,7 +324,7 @@ export default function RootLayout({
       "St Charles Car Show 2026",
     ],
     description:
-      "The 5th Annual Riverside Riders Fall Wheels Show is the Fox Valley's premier free car, truck, and motorcycle show. Held at Riverside Community Church in St. Charles, Illinois on Saturday, September 19, 2026. Features independently judged trophy classes for classic cars, modified classics, modern cars, classic trucks, American motorcycles, and import bikes. Free entry, free food (hot dogs, snacks, chips, drinks, ice cream), live music by 3-D Sound, spacewalks, games, and family fun activities. Serving enthusiasts from St. Charles, Geneva, Batavia, South Elgin, Campton Hills, Elgin, Wheaton, Naperville, Aurora, and the greater Chicago western suburbs.",
+      "The 5th Annual Riverside Riders Fall Wheels Show is the Fox Valley's premier free car, truck, and motorcycle show. Held at Riverside Community Church in St. Charles, Illinois on Saturday, September 19, 2026. Features 7 independently judged trophy classes: Best Classic Stock Car (1900-1970), Best Classic Stock Car (1971-1999), Best Modified Classic Car (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car or Truck (2000+), Best Classic Truck (Pre-2000), and Best Motorcycles (All Years and Makes). Free entry, free food, live music by 3-D Sound, spacewalks, games, and family fun activities. Serving enthusiasts from St. Charles, Geneva, Batavia, South Elgin, Campton Hills, Elgin, Wheaton, Naperville, Aurora, and the greater Chicago western suburbs.",
     startDate: "2026-09-19T11:00:00-05:00",
     endDate: "2026-09-19T15:00:00-05:00",
     doorTime: "2026-09-19T10:00:00-05:00",
@@ -483,7 +483,7 @@ export default function RootLayout({
         name: "What types of vehicles can I enter in the car show?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We welcome all types of vehicles — classic cars, modified classics, modern cars (under 25 years), classic trucks, American motorcycles (Harley-Davidson, Indian, etc.), and import motorcycles (Honda, Kawasaki, Ducati, BMW, etc.). If it has wheels, bring it!",
+          text: "We welcome all types of vehicles — classic stock cars (1900-1970 and 1971-1999), modified classic cars (1900-1970 and 1971-1999), modern cars and trucks (2000 or above), classic trucks (pre-2000), and motorcycles of all years and makes including Harley-Davidson, Indian, Honda, Kawasaki, Ducati, BMW, and more. If it has wheels, bring it!",
         },
       },
       {
@@ -491,7 +491,7 @@ export default function RootLayout({
         name: "What are the trophy classes at the car show?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Six independently judged entry classes: Best Stock Classic, Best Modified Classic, Best Modern Car (under 25 years), Best American Bike, Best Import Bike, and Best Classic Truck. Plus two special judge awards: Best of Show and Least Likely to Make it Home.",
+          text: "Seven independently judged entry classes: Best Classic Stock Car (1900-1970), Best Classic Stock Car (1971-1999), Best Modified Classic Car (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best Motorcycles (All Years and Makes). Plus two special judge awards: Best of Show and Least Likely to Make it Home.",
         },
       },
       {

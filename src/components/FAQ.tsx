@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "What types of vehicles can I enter?",
-    a: "We welcome all types — classic cars, modified classics, modern cars (under 25 years), classic trucks, American motorcycles, and import motorcycles. If it has wheels, bring it!",
+    a: "We welcome all types — classic stock cars (1900-1970 and 1971-1999), modified classics, modern cars and trucks (2000 or above), classic trucks (pre-2000), and motorcycles of all years and makes. If it has wheels, bring it!",
   },
   {
     q: "How is judging done?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "What are the award classes?",
-    a: "Six entry classes: Best Stock Classic, Best Modified Classic, Best Modern Car, Best American Bike, Best Import Bike, and Best Classic Truck. Plus two special judge awards: Best of Show and Least Likely to Make it Home.",
+    a: "Seven entry classes: Best Classic Stock Car (1900-1970), Best Classic Stock Car (1971-1999), Best Modified Classic Car (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best Motorcycles (All Years and Makes). Plus two special judge awards: Best of Show and Least Likely to Make it Home.",
   },
   {
     q: "Where is it held?",

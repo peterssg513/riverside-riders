@@ -78,16 +78,18 @@ export default function Home() {
         </h2>
         <p>
           The Fall Wheels Show is a completely independent judged award show
-          featuring six trophy classes: Best Stock Classic, Best Modified
-          Classic, Best Modern Car (under 25 years), Best American Bike, Best
-          Import Bike, and Best Classic Truck. Two special judge awards — Best
+          featuring seven trophy classes: Best Classic Stock Car (1900-1970),
+          Best Classic Stock Car (1971-1999), Best Modified Classic Car
+          (1900-1970), Best Modified Stock Car (1971-1999), Best Modern Car
+          or Truck (2000 or above), Best Classic Truck (Pre-2000), and Best
+          Motorcycles (All Years and Makes). Two special judge awards — Best
           of Show and Least Likely to Make it Home — recognize the top overall
           vehicle and the fan-favorite ride with the most character. All
           trophies are top quality. Whether you have a classic car, vintage
           automobile, antique car, hot rod, muscle car, custom build, modified
-          classic, modern sports car, classic pickup truck, Harley-Davidson
-          motorcycle, Indian motorcycle, Honda, Kawasaki, Ducati, BMW, or any
-          other import bike — there is a class for you.
+          classic, modern sports car, modern truck, classic pickup truck,
+          Harley-Davidson motorcycle, Indian motorcycle, Honda, Kawasaki,
+          Ducati, BMW, or any other motorcycle — there is a class for you.
         </p>
 
         {/* ── Free Entry & Food ── */}

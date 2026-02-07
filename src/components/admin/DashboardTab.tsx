@@ -19,12 +19,13 @@ function getCountdown() {
 }
 
 const CLASS_COLORS: Record<string, string> = {
-  "Best Stock Classic": "#8B1A1A",
-  "Best Modified Classic": "#A0522D",
-  "Best Modern Car (under 25 years)": "#2563EB",
-  "Best American Bike": "#C9A84C",
-  "Best Import Bike": "#059669",
-  "Best Classic Truck": "#7C3AED",
+  "Best Classic Stock Car (1900-1970)": "#8B1A1A",
+  "Best Classic Stock Car (1971-1999)": "#A0522D",
+  "Best Modified Classic Car (1900-1970)": "#C9A84C",
+  "Best Modified Stock Car (1971-1999)": "#D97706",
+  "Best Modern Car or Truck (2000 or above)": "#2563EB",
+  "Best Classic Truck (Pre-2000)": "#7C3AED",
+  "Best Motorcycles (All Years and Makes)": "#059669",
 };
 
 interface Props {

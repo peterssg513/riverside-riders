@@ -141,12 +141,16 @@ export const motorcycleManufacturers = [
 // Vehicle classes based on vehicle type
 export const vehicleClasses = {
   car: [
-    "Best Stock Classic",
-    "Best Modified Classic",
-    "Best Modern Car (under 25 years)",
-    "Best Classic Truck",
+    "Best Classic Stock Car (1900-1970)",
+    "Best Classic Stock Car (1971-1999)",
+    "Best Modified Classic Car (1900-1970)",
+    "Best Modified Stock Car (1971-1999)",
+    "Best Modern Car or Truck (2000 or above)",
+    "Best Classic Truck (Pre-2000)",
   ],
-  bike: ["Best American Bike", "Best Import Bike"],
+  bike: [
+    "Best Motorcycles (All Years and Makes)",
+  ],
 };
 
 // Generate year options from 1900 to 2026

@@ -13,21 +13,23 @@ import type { Vehicle } from "./AdminShell";
 import * as XLSX from "xlsx";
 
 const ALL_CLASSES = [
-  "Best Stock Classic",
-  "Best Modified Classic",
-  "Best Modern Car (under 25 years)",
-  "Best American Bike",
-  "Best Import Bike",
-  "Best Classic Truck",
+  "Best Classic Stock Car (1900-1970)",
+  "Best Classic Stock Car (1971-1999)",
+  "Best Modified Classic Car (1900-1970)",
+  "Best Modified Stock Car (1971-1999)",
+  "Best Modern Car or Truck (2000 or above)",
+  "Best Classic Truck (Pre-2000)",
+  "Best Motorcycles (All Years and Makes)",
 ];
 
 const CLASS_PREFIX: Record<string, string> = {
-  "Best Stock Classic": "SC",
-  "Best Modified Classic": "MC",
-  "Best Modern Car (under 25 years)": "MD",
-  "Best American Bike": "AB",
-  "Best Import Bike": "IB",
-  "Best Classic Truck": "CT",
+  "Best Classic Stock Car (1900-1970)": "CS1",
+  "Best Classic Stock Car (1971-1999)": "CS2",
+  "Best Modified Classic Car (1900-1970)": "MC1",
+  "Best Modified Stock Car (1971-1999)": "MC2",
+  "Best Modern Car or Truck (2000 or above)": "MD",
+  "Best Classic Truck (Pre-2000)": "CT",
+  "Best Motorcycles (All Years and Makes)": "BM",
 };
 
 type SortField = "class_number" | "year" | "make" | "created_at";
